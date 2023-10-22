@@ -6,28 +6,30 @@ namespace Lab_7_Polymorphism
     {
         static void Main(string[] args)
         {
+            //Instantiate objects
+            Rectangle r1 = new Rectangle();
+            Square s1 = new Square();
+            Circle c1 = new Circle();
+            Parallelogram p1 = new Parallelogram();
+            Ellipse e1 = new Ellipse();
 
-            Rectangle r1 = new();
-            Square f1 = new();
-            Circle c1 = new();
-            Parallelogram p1 = new();
-            Ellipse e1 = new();
 
 
-            Console.WriteLine("Rectangle area is: " + r1.Area(8, 4));
-            Console.WriteLine("Rectangle circumference is: " + r1.Circumference(8, 4));
+            //Call our methods and print results
+            Console.WriteLine("Area of rectangle is: " + r1.Area(r1.Base, r1.Height));
+            Console.WriteLine("Circumference of rectangle is: " + r1.Circumference(r1.Base, r1.Height));
             Console.WriteLine();
-            Console.WriteLine("Square area is: " + f1.Area(8, 8));
-            Console.WriteLine("Square circumference is: " + f1.Circumference(8, 8));
+            Console.WriteLine("Area of square is: " + s1.Area(s1.Base, s1.Height));
+            Console.WriteLine("Circumference of square is: " + s1.Circumference(s1.Base, s1.Height));
             Console.WriteLine();
-            Console.WriteLine("Circle area is: " + c1.Area(5, 0));
-            Console.WriteLine("Circle circumference is: " + c1.Circumference(0, 10));
+            Console.WriteLine("Area of circle is: " + c1.Area(c1.Radius, c1.Diameter));
+            Console.WriteLine("Circumference of circle is: " + c1.Circumference(c1.Radius, c1.Diameter));
             Console.WriteLine();
-            Console.WriteLine("Parallelogram area is: " + p1.Area(9, 4));
-            Console.WriteLine("Parallelogram circumference is: " + p1.Circumference(9, 4));
+            Console.WriteLine("Area of parallelogram is: " + p1.Area(p1.Base, p1.Height));
+            Console.WriteLine("Circumference of parallelogram is: " + p1.Circumference(p1.Base, p1.Height));
             Console.WriteLine();
-            Console.WriteLine("Ellipse area is: " + e1.Area(5, 3));
-            Console.WriteLine("Ellipse circumference is: complicated :)");
+            Console.WriteLine("Area of ellipse is: " + e1.Area(e1.ASemiMajoraxis, e1.BSemiMinorAxis));
+            Console.WriteLine("Circumference of ellipse is: " + e1.Circumference(e1.ASemiMajoraxis, e1.BSemiMinorAxis));
 
 
 

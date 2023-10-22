@@ -12,14 +12,14 @@
             Height = 8;
         }
 
-        public override double Area(double b, double h)
+        public override double Area(double baze, double height)
         {
-            return base.Area(b, h);
+            return baze * height;
         }
 
-        public override double Circumference(double b, double h)
+        public override double Circumference(double baze, double height)
         {
-            return base.Area(b, h);
+            return baze * 2 + height * 2;
         }
     }
 }

@@ -11,14 +11,14 @@
             Height = 8;
         }
 
-        public override double Area(double b, double h)
+        public override double Area(double baze, double height)
         {
-            return b * h;
+            return baze * height;
         }
 
-        public override double Circumference(double b, double h)
+        public override double Circumference(double baze, double height)
         {
-            return 2 * b + 2 * h;
+            return 2 * baze + 2 * height;
         }
 
     }
