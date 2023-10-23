@@ -12,14 +12,14 @@
 
         }
 
-        public override double Area(double baze, double height)
+        public override double Area(double pBase, double height)
         {
-            return baze * height;
+            return pBase * height;
         }
 
-        public override double Circumference(double baze, double height)
+        public override double Circumference(double pBase, double height)
         {
-            return baze * height;
+            return pBase * height;
         }
     }
 }

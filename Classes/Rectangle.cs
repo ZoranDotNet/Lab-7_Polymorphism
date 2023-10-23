@@ -11,14 +11,14 @@
             Height = 8;
         }
 
-        public override double Area(double baze, double height)
+        public override double Area(double rectangleBase, double height)
         {
-            return baze * height;
+            return rectangleBase * height;
         }
 
-        public override double Circumference(double baze, double height)
+        public override double Circumference(double rectangleBase, double height)
         {
-            return 2 * baze + 2 * height;
+            return 2 * rectangleBase + 2 * height;
         }
 
     }
