@@ -11,14 +11,14 @@
             Diameter = Radius * 2;
         }
 
-        public override double Area(double radius, double diameter)
+        public override double Area()
         {
-            return Math.Round(Math.Pow(radius, 2) * Math.PI);
+            return Math.Round(Math.Pow(Radius, 2) * Math.PI);
         }
 
-        public override double Circumference(double radius, double diameter)
+        public override double Circumference()
         {
-            return Math.Round(diameter * Math.PI, 2);
+            return Math.Round(Math.PI * Diameter, 2);
         }
 
 

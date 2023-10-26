@@ -5,10 +5,10 @@
 
 
 
-        public abstract double Area(double b, double h);
+        public abstract double Area();
 
 
-        public abstract double Circumference(double b, double h);
+        public abstract double Circumference();
 
 
     }

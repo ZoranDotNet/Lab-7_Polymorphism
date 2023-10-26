@@ -12,14 +12,14 @@
             Height = 8;
         }
 
-        public override double Area(double squareBase, double height)
+        public override double Area()
         {
-            return squareBase * height;
+            return Base * Height;
         }
 
-        public override double Circumference(double squareBase, double height)
+        public override double Circumference()
         {
-            return squareBase * 2 + height * 2;
+            return Base * 2 + Height * 2;
         }
     }
 }

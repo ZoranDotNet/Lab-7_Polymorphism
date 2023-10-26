@@ -11,13 +11,13 @@
             BSemiMinorAxis = 3;
         }
 
-        public override double Area(double ASemiMajoraxis, double BSemiMinorAxis)
+        public override double Area()
         {
             double area = ASemiMajoraxis * BSemiMinorAxis * Math.PI;
             return Math.Round(area, 2);
         }
         // Formula for circumference P = 2⋅π⋅√½⋅(a2+b2)
-        public override double Circumference(double ASemiMajoraxis, double BSemiMinorAxis)
+        public override double Circumference()
         {
             double output = 2 * Math.PI * Math.Sqrt(0.5 * (Math.Pow(ASemiMajoraxis, 2) + Math.Pow(BSemiMinorAxis, 2)));
 
